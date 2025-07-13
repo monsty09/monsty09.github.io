@@ -1,21 +1,10 @@
 ---
-import Navigation from '../components/Navigation.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>posts</title>
-	</head>
-	<body>
-		<Navigation />
-
-		<div class="content">
-			<p>there will be a list of posts when the posts exist</p>
-		</div>
-	</body>
-</html>
+<BaseLayout>
+	<div class="content">
+		<p>there will be a list of posts when the posts exist</p>
+	</div>
+</BaseLayout>
